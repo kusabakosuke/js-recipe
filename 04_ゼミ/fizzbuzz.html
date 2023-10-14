@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+      let number = 15
+      for (let i = 1; i <= number; i++) {
+        if (i % number === 0) {
+          console.log("FizzBuzz")
+        } else if (i % 3 === 0) {
+          console.log("Fizz")
+        } else if (i % 5 === 0) {
+          console.log("Buzz")
+        } else {
+          console.log(i)
+        }
+      }
+      */
+      const fizzbuzz = function (n) {
+        for (let i = 1; i <= n; i++) {
+          if (i % 15 === 0) {
+            console.log("FizzBuzz")
+          } else if (i % 3 === 0) {
+            console.log("Fizz")
+          } else if (i % 5 === 0) {
+            console.log("Buzz")
+          } else {
+            console.log(i)
+          }
+        }
+      }
+
+      fizzbuzz(100)
+    </script>
+  </body>
+</html>
