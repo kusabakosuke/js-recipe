@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="quizcontent">さっきーのお兄ちゃんの名前は？</h1>
+    <div id>
+      <button id="quizchoice1">ゆういち</button>
+      <button id="quizchoice2">こうじ</button>
+      <button id="quizchoice3">ともひろ</button>
+    </div>
+    <img
+      id="brother"
+      src="https://media.gettyimages.com/id/638494424/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E4%B8%AD%E3%81%AE%E5%85%84%E5%BC%9F.jpg"
+    />
+    <div id="quizresult"></div>
+
+    <script>
+      const quizchoice1 = document.getElementById("quizchoice1")
+      const quizchoice2 = document.getElementById("quizchoice2")
+      const quizchoice3 = document.getElementById("quizchoice3")
+
+      const quizresult = document.getElementById("quizresult")
+
+      quizchoice1.onclick = function () {
+        quizresult.textContent = "違います"
+        quizchoice2.disabled = true
+        quizchoice3.disabled = true
+      }
+      quizchoice2.onclick = function () {
+        quizresult.textContent = "違います"
+      }
+      quizchoice3.onclick = function () {
+        quizresult.textContent = "正解です！"
+        brother.src =
+          "https://cdnimage.our-photo.co/images/note/FPLcy4GO1kkYZwGpz8QqZVVbmg6ZEyAP.jpg"
+      }
+    </script>
+  </body>
+</html>
