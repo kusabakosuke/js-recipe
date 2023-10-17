@@ -23,3 +23,28 @@ const genkiFunction = function (number) {
   }
 }
 genkiFunction(100)
+
+const FizzBuzz = function (number) {
+  for (let i = 1; i <= number; i++) {
+    if (i % 15 === 0) {
+      console.log("FizzBuzz")
+    }
+    if (i % 5 === 0) {
+      console.log("Buzz")
+    }
+    if (i % 3 === 0) {
+      console.log("Fizz")
+    } else {
+      console.log(i)
+    }
+  }
+}
+FizzBuzz(100)
+
+/*
+const lovethree = function(number){
+    for(x = 1; x <= number; x++){
+        if(x)
+    }
+}
+*/
