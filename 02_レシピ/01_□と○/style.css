@@ -7,7 +7,12 @@
 .rounded {
   border-radius: 50px;
 }
-
+.triangle {
+  background-color: black;
+  height: calc(tan(60deg) * 100px / 2);
+  width: 100px;
+}
 .transition {
+  /* 変化するすべてのプロパティを1秒(1s)かけて変化させる */
   transition: all 1s;
 }
