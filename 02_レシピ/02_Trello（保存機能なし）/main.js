@@ -38,10 +38,13 @@ addButton.onclick = function () {
   container.append(card)
   inputElement.value = ""
 }
-// 共有の処理:テキストからカードを作成する
-const createCard = function () {
+// 共通の処理:テキストからカードを作成する
+const createCard = function (text) {
   const card = document.createElement("div")
   card.className = "card"
+  /*
+  const text = inputElement.value
+  */
   // テキストを表示する部分を作る
   const todo = document.createElement("div")
   todo.className = "todo"
